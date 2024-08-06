@@ -20,13 +20,14 @@ export default function Home() {
           <Image className="mb-10" src={Logo} alt="blockblock logo" width={112} height={42}></Image>
         </div>
         <div className="flex justify-center">
-          <div className="bg-[#1B40B1]/20 w-80 h-10 rounded-3xl flex justify-between py-1 px-3">
+          <div className="bg-[#1B40B1]/20 w-80 h-12 rounded-full flex justify-between items-center py-1 px-3">
+            <input className="w-full bg-transparent" placeholder="Search"></input>
             <button>
-              <SearchIcon></SearchIcon>
+              <SearchIcon className="text-[#274BB7]"></SearchIcon>
             </button>
-            <input className="w-full bg-transparent"></input>
+            <div className="h-1/3 w-[1px] bg-[#1B40B1]/50 mx-2"></div>
             <button>
-              <LoopIcon></LoopIcon>
+              <LoopIcon className="text-[#274BB7]"></LoopIcon>
             </button>
           </div>
         </div>
@@ -36,8 +37,7 @@ export default function Home() {
 
       </div>
       {/* 하단 */}
-      <hr className="mx-6 my-2"></hr>
-      <div className="flex justify-around items-baseline">
+      <div className="bg-gray-300 flex justify-around items-baseline ">
         <HomeIcon className="h-8 w-8 text-[#274BB7]"></HomeIcon>
         <EnergySavingsLeafIcon className="h-14 w-14 text-[#1B40B1]"></EnergySavingsLeafIcon>
         <BarChartIcon className="h-8 w-8 text-[#274BB7]"></BarChartIcon>
